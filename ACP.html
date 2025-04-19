@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="https://fonts.cdnfonts.com/css/technology" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <style>
+      body {
+        background-color: rgb(0, 0, 0);
+        font-family: "technology";
+        font-size: 100px;
+        text-align: center;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        text-shadow: 6px 6px 8px rgb(135, 139, 142);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .wrapper {
+        margin-top: 75px;
+        width: 70%;
+        border: 15px solid rgb(255, 255, 255);
+        box-shadow: 7px 7px 15px rgb(158, 155, 155);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper bg-dark">
+      <h1 class="mt-5">Stopwatch</h1>
+
+      <p>
+        <span id="minutes">00</span>:<span id="seconds">00</span>:<span
+          id="milliseconds"
+          >00</span
+        >
+      </p>
+      <button
+        id="button-start"
+        class="btn btn-success btn-outline-light btn-lg"
+      >
+        Start
+      </button>
+      <button id="button-stop" class="btn btn-danger btn-outline-light btn-lg">
+        Stop
+      </button>
+      <button id="button-reset" class="btn btn-info btn-outline-light btn-lg">
+        reset
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
